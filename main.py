@@ -2,6 +2,7 @@ from art import logo
 from art import vs
 from  game_data import data
 from random import randint
+from replit import clear
 
 score=0
 information1={}
@@ -60,7 +61,7 @@ while not not_over:
             # print(guessed2)
             print("Correct.")
             not_over=False
-            
+            clear()
         else:
             not_over=True
             print(f"False. Your score is at {score}")
@@ -71,6 +72,7 @@ while not not_over:
             guessed=guessed2
             print("Correct")
             not_over=False
+            clear()
         else:
             not_over=True
             print(f"False. Your score is at {score}")
